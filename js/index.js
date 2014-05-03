@@ -24,7 +24,7 @@ document.body.addEventListener('mouseup', function(e)
 });
 }
 
-function clear(e)
+function clearCanvas(e)
 {
 	c.fillStyle = "#FFFFFF";
 	c.fillRect(0, 0, canvas.width, canvas.height);
