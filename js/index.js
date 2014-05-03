@@ -1,12 +1,11 @@
 var c;
 var diameter;
-var canvas;
 
 function init(e)
 {
 diameter = 0.2; //in inches
 
-canvas = document.getElementById("canvas");
+var canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
 canvas.width = 600;
 canvas.height = 600;
@@ -26,8 +25,7 @@ document.body.addEventListener('mouseup', function(e)
 
 function clearCanvas(e)
 {
-	c.fillStyle = "#FFFFFF";
-	c.fillRect(0, 0, canvas.width, canvas.height);
+	c.clear();
 }
 
 function setSize(value)
@@ -39,6 +37,5 @@ function draw(e)
 {
 	c.beginPath();
 	c.arc(e.offsetX, e.offsetY, diameter*50, 0, Math.PI*2);
-	c.fillStyle = "#000000";
 	c.fill();
 }
