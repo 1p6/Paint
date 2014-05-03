@@ -1,8 +1,9 @@
-var c
+var c;
+var radius;
 
 function init(e)
 {
-var radius = 10 //in pixels
+radius = 10; //in pixels
 
 var canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
