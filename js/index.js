@@ -19,7 +19,7 @@ canvas.addEventListener('mousedown', function(e)
 document.body.addEventListener('mouseup', function(e)
 {
 	canvas.removeEventListener('mousemove', draw);
-	document.getElementById('img').src = canvas.toDataURL();
+	document.getElementById('save').href = canvas.toDataURL();
 });
 }
 
