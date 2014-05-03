@@ -1,9 +1,11 @@
+var c
+
 function init(e)
 {
 var radius = 10 //in pixels
 
 var canvas = document.getElementById("canvas");
-var c = canvas.getContext('2d');
+c = canvas.getContext('2d');
 canvas.width = 600;
 canvas.height = 600;
 document.getElementById("size").value = radius;
