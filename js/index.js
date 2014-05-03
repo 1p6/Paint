@@ -3,7 +3,7 @@ var diameter;
 
 function init(e)
 {
-diameter = 0.1; //in inches
+diameter = 0.2; //in inches
 
 var canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
