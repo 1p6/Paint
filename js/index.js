@@ -1,9 +1,9 @@
 var c;
-var radius;
+var diameter;
 
 function init(e)
 {
-radius = 10; //in pixels
+diameter = 0.1; //in inches
 
 var canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
@@ -25,12 +25,12 @@ document.body.addEventListener('mouseup', function(e)
 
 function setSize(value)
 {
-	radius = value;
+	diameter = value;
 }
 
 function draw(e)
 {
 	c.beginPath();
-	c.arc(e.offsetX, e.offsetY, radius, 0, Math.PI*2);
+	c.arc(e.offsetX, e.offsetY, diameter*50, 0, Math.PI*2);
 	c.fill();
 }
