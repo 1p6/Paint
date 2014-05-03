@@ -9,7 +9,7 @@ var canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
 canvas.width = 600;
 canvas.height = 600;
-document.getElementById("size").value = radius;
+document.getElementById("size").value = diameter;
 
 canvas.addEventListener('mousedown', function(e)
 {
