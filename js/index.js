@@ -26,7 +26,7 @@ document.body.addEventListener('mouseup', function(e)
 
 function clear(e)
 {
-	c.fillStyle = "FFFFFF";
+	c.fillStyle = "#FFFFFF";
 	c.fillRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -39,6 +39,6 @@ function draw(e)
 {
 	c.beginPath();
 	c.arc(e.offsetX, e.offsetY, diameter*50, 0, Math.PI*2);
-	c.fillStyle = "000000";
+	c.fillStyle = "#000000";
 	c.fill();
 }
