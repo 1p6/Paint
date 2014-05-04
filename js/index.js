@@ -1,10 +1,12 @@
 var c;
 var diameter;
 var canvas;
+var color;
 
 function init(e)
 {
-diameter = 0.2; //in inches
+diameter = 0.2;
+color = "rgb(255, 255, 255)";
 
 canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
@@ -39,6 +41,6 @@ function draw(e)
 {
 	c.beginPath();
 	c.arc(e.offsetX, e.offsetY, diameter*50, 0, Math.PI*2);
-	c.fillStyle = "rgb(0, 255, 0)";
+	c.fillStyle = color;
 	c.fill();
 }
