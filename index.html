@@ -9,29 +9,45 @@
     <script src="js/index.js"></script>
   </head>
   <body onload="init()">
-    Click <a href="https://github.com/1p6/Paint/">here</a> to see the code
-    <br/>
-    <br/>
-    Set the brush size here:
-    <br/>
-    <input type="text" id="size" onblur="setSize(this.value)"/>inches
-    <br/>
-    <br/>
-    Click here to clear:
-    <br/>
-    <button onclick="clearCanvas()">Clear</button>
-    <br/>
-    <br/>
-    NOTE: The save feature only works on the latest version of Google Chrome, Firefox, or Opera
-    <br/>
-    Click here to download the image:
-    <br/>
-    <a id="save" href="" download><button>Save</button></a>
-    <br/>
-    <br/>
-    Draw here:
-    <br/>
-    <canvas id="canvas"></canvas>
-    <br/>
+    <div>
+      Click <a href="https://github.com/1p6/Paint/">here</a> to see the code
+      <br/>
+      <br/>
+      Set the brush size here:
+      <br/>
+      <input type="text" id="size" onblur="setSize(this.value)"/>inches
+      <br/>
+      <br/>
+      Click here to clear:
+      <br/>
+      <button onclick="clearCanvas()">Clear</button>
+      <br/>
+      <br/>
+      NOTE: The save feature only works on the latest version of Google Chrome, Firefox, or Opera
+      <br/>
+      Click here to download the image:
+      <br/>
+      <a id="save" href="" download><button>Save</button></a>
+     <br/>
+     <br/>
+      Draw here:
+      <br/>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div>
+      <div id="rslider"></div>
+	    <br/>
+	    <span id="r"/>
+    	<br/>
+	    <div id="gslider"></div>
+    	<br/>
+	    <span id="g"/>
+	    <br/>
+	    <div id="bslider"></div>
+	    <br/>
+    	<span id="b"/>
+    	<br/>
+    	<div id="output"></div>
+    </div>
   </body>
 </html>
