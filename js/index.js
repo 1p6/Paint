@@ -53,7 +53,9 @@ $(function(){
 		slide: slide,
 		change: slide
 	});
-	$("#rslider").slider("value", 50);
+	$("#rslider").slider("value", 0);
+	$("#gslider").slider("value", 0);
+	$("#bslider").slider("value", 0);
 });
 
 function slide()
