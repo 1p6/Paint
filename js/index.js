@@ -39,6 +39,6 @@ function draw(e)
 {
 	c.beginPath();
 	c.arc(e.offsetX, e.offsetY, diameter*50, 0, Math.PI*2);
-	c.fillStyle = "#000000";
+	c.fillStyle = "rgb(0, 255, 0)";
 	c.fill();
 }
