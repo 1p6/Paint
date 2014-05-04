@@ -6,7 +6,7 @@ var color;
 function init(e)
 {
 diameter = 0.2;
-color = "rgb(255, 255, 255)";
+color = "rgb(0, 0, 0)";
 
 canvas = document.getElementById("canvas");
 c = canvas.getContext('2d');
