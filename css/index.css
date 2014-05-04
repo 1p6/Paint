@@ -6,3 +6,20 @@ border-style:solid;
 {
 border-style:solid;
 }
+#output
+{
+	width: 200px;
+	height: 200px;
+	border: 1px solid;
+}
+#rslider, #bslider, #gslider
+{
+	width: 300px;
+	margin: 10px;
+}
+#rslider .ui-slider-range { background: red; }
+#rslider .ui-slider-handle { border-color: red; }
+#gslider .ui-slider-range { background: rgb(0,255,0); }
+#gslider .ui-slider-handle { border-color: rgb(0,255,0); }
+#bslider .ui-slider-range { background: blue; }
+#bslider.ui-slider-handle { border-color: blue; }
