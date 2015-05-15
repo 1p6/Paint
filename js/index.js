@@ -24,10 +24,10 @@ canvas.ondrop = function(evt){
 	evt.preventDefault();
 	
 	var reader = new FileReader();
-	reader.onload = function(evt){
+	reader.onload = function(e){
 		var img = document.createElement("img");
-		img.src = evt.target.result;
-		c.drawImage(img, 0, 0);
+		img.src = e.target.result;
+		c.drawImage(img, evt.clientX, evt.clientY);
 	}
 	reader.readAsDataURL(evt.dataTransfer.files[0]);
 }
