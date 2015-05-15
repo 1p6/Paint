@@ -27,7 +27,7 @@ canvas.ondrop = function(evt){
 	reader.onload = function(e){
 		var img = document.createElement("img");
 		img.src = e.target.result;
-		c.drawImage(img, evt.clientX, evt.clientY);
+		c.drawImage(img, evt.offsetX, evt.offsetY);
 	}
 	reader.readAsDataURL(evt.dataTransfer.files[0]);
 }
