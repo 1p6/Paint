@@ -14,6 +14,24 @@ canvas.width = 600;
 canvas.height = 600;
 document.getElementById("size").value = diameter;
 
+canvas.ondragover = function(evt){
+	evt.stopPropagation();
+	evt.preventDefault();
+	evt.dataTransfer.dropEffect = "copy";
+};
+canvas.ondrop = function(evt){
+	evt.stopPropagation();
+	evt.preventDefault();
+	
+	var reader = new FileReader();
+	reader.onload = function(evt){
+		var img = document.createElement("img");
+		img.src = evt.target.result;
+		c.drawImage(img, 0, 0);
+	}
+	reader.readAsDataUrl(evt.dataTransfer.files[0]);
+}
+
 canvas.addEventListener('mousedown', function(e)
 {
 	draw(e);
