@@ -29,7 +29,7 @@ canvas.ondrop = function(evt){
 		img.src = evt.target.result;
 		c.drawImage(img, 0, 0);
 	}
-	reader.readAsDataUrl(evt.dataTransfer.files[0]);
+	reader.readAsDataURL(evt.dataTransfer.files[0]);
 }
 
 canvas.addEventListener('mousedown', function(e)
